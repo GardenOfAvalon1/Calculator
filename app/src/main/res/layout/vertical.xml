@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:gravity="right"
+        android:textSize="50sp"
+        android:hint="请输入" />
+    <Button
+        android:id="@+id/delete"
+        android:layout_below="@id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="23sp"
+        android:text="C" />
+    <Button
+        android:id="@+id/seven"
+        android:layout_below="@id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="23sp"
+        android:text="7" />
+
+    <Button
+        android:id="@+id/four"
+        android:layout_below="@id/seven"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="23sp"
+        android:text="4" />
+    <Button
+        android:id="@+id/one"
+        android:layout_below="@id/four"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="23sp"
+        android:text="1" />
+    <Button
+        android:id="@+id/percent"
+        android:layout_below="@id/one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="23sp"
+        android:text="%" />
+
+    <Button
+        android:id="@+id/openParen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/percent"
+        android:text="("
+        android:textSize="23sp" />
+    <Button
+        android:id="@+id/divide"
+        android:layout_below="@id/textView1"
+        android:layout_toRightOf = "@id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="23sp"
+        android:text="÷" />
+    <Button
+        android:id="@+id/eight"
+        android:layout_below="@id/divide"
+        android:layout_toRightOf = "@id/seven"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="23sp"
+        android:text="8" />
+    <Button
+        android:id="@+id/five"
+        android:layout_below="@id/eight"
+        android:layout_toRightOf = "@id/four"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="23sp"
+        android:text="5" />
+    <Button
+        android:id="@+id/two"
+        android:layout_below="@id/five"
+        android:layout_toRightOf = "@id/one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="23sp"
+        android:text="2" />
+    <Button
+        android:id="@+id/zero"
+        android:layout_below="@id/two"
+        android:layout_toRightOf = "@id/percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="23sp"
+        android:text="0" />
+    <Button
+        android:id="@+id/closeParen"
+        android:layout_below="@id/zero"
+        android:layout_toRightOf = "@id/openParen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="23sp"
+        android:text=")" />
+    <Button
+        android:id="@+id/multiply"
+        android:layout_below="@id/textView1"
+        android:layout_toRightOf = "@id/divide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="23sp"
+        android:text="×" />
+    <Button
+        android:id="@+id/nine"
+        android:layout_below="@id/multiply"
+        android:layout_toRightOf = "@id/eight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="23sp"
+        android:text="9" />
+    <Button
+        android:id="@+id/six"
+        android:layout_below="@id/nine"
+        android:layout_toRightOf = "@id/five"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="23sp"
+        android:text="6" />
+    <Button
+        android:id="@+id/three"
+        android:layout_below="@id/six"
+        android:layout_toRightOf = "@id/two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="23sp"
+        android:text="3" />
+    <Button
+        android:id="@+id/point"
+        android:layout_below="@id/three"
+        android:layout_toRightOf = "@id/zero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="23sp"
+        android:text="." />
+    <Button
+        android:id="@+id/e"
+        android:layout_below="@id/point"
+        android:layout_toRightOf = "@id/closeParen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="23sp"
+        android:text="e" />
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView1"
+        android:layout_toRightOf="@id/multiply"
+        android:layout_alignParentRight="true"
+        android:textSize="23sp"
+        android:text="⌫" />
+    <Button
+        android:id="@+id/subtract"
+        android:layout_below="@id/back"
+        android:layout_toRightOf = "@id/nine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textSize="23sp"
+        android:text="-" />
+    <Button
+        android:id="@+id/add"
+        android:layout_below="@id/subtract"
+        android:layout_toRightOf = "@id/six"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textSize="23sp"
+        android:text="+" />
+    <Button
+        android:id="@+id/equal"
+        android:layout_below="@id/add"
+        android:layout_toRightOf = "@id/point"
+
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:textSize="30sp"
+        android:text="=" />
+
+
+</RelativeLayout>
